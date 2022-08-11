@@ -16,10 +16,6 @@ function useOnWindowResize(
   when = true,
   isLayoutEffect = false
 ) {
-  /*
-    Since the above condition changes values only across different environments, it is fine to call the hook conditionally
-    */
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useGlobalObjectEventListener(
     global.window,
     "resize",

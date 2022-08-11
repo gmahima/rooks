@@ -19,11 +19,6 @@ function useWindowEventListener(
   listenerOptions: ListenerOptions = {},
   isLayoutEffect = false
 ): void {
-  // if (typeof window !== "undefined") {
-  /*
-    Since the above condition changes values only across different environments, it is fine to call the hook conditionally
-    */
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useGlobalObjectEventListener(
     global.window,
     eventName,
