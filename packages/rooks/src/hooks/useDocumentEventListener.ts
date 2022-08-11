@@ -18,11 +18,6 @@ function useDocumentEventListener(
   listenerOptions: ListenerOptions = {},
   isLayoutEffect = false
 ): void {
-  // if (typeof document !== "undefined") {
-  /*
-    Since the above condition changes values only across different environments, it is fine to call the hook conditionally
-    */
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useGlobalObjectEventListener(
     global.document,
     eventName,
